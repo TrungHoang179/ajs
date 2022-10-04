@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ajs';
+  id:any = "login";
+  tabChange(ids:any){
+    this.id = ids;
+    console.log(this.id);
+  }
 }
