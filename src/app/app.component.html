@@ -5,12 +5,10 @@
 </header>
 <nav class="section navigation">
   <div class="container">
-
     <div class="btn-group" role="group" aria-label="Default button group">
       <button id="login" (click)="tabChange('login')" type="button" class="btn btn-outline-primary">Login</button>
       <button id="register" (click)="tabChange('register')" type="button" class="btn btn-outline-danger">Register</button>
     </div>
-
   </div>
 </nav>
 <section class="section main">
@@ -41,7 +39,12 @@
 </section>
 <footer class="section footer">
   <div class="container">
-
+    <nav class="nav">
+      <a routerLink="/" class="nav-link" >login</a>
+      <a routerLink="/register" class="nav-link" >Register</a>
+      <a routerLink="/thoitiet" class="nav-link">Thời tiết</a>
+    </nav>
+    <router-outlet></router-outlet>
   </div>
 </footer>
 
