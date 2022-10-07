@@ -10,14 +10,16 @@ import {RegisterComponent} from "./angularbt4/register.component";
 import {RouterModule, Routes} from "@angular/router";
 import {ThoitietComponent} from "./HNweather/thoitiet.component";
 import {HttpClientModule} from "@angular/common/http";
+import {MenuComponent} from "./angularbt8/menu.component";
 const appRoutes: Routes = [
   {path:'',component: LoginComponent},
   {path:'register',component: RegisterComponent},
   {path:'thoitiet',component: ThoitietComponent},
+  {path:'menu',component: MenuComponent},
 ]
 @NgModule({
   declarations: [
-    AppComponent, ClassroomComponent, StudentComponent, TeacherComponent, LoginComponent, RegisterComponent, ThoitietComponent
+    AppComponent, ClassroomComponent, StudentComponent, TeacherComponent, LoginComponent, RegisterComponent, ThoitietComponent, MenuComponent
   ],
   imports: [
     BrowserModule, RouterModule.forRoot(appRoutes), HttpClientModule

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="menu.component.css">
+</head>
+<body>
+<h1>Menu {{flag}}</h1>
+<button class="btn btn-warning m-2" type="button" (click)="on()">On</button>
+<button class="btn btn-warning m-2" type="button" (click)="off()">Off</button>
+<ul *ngIf="flag">
+  <li *ngFor="let m of menu;let i = index;">
+    <img src="{{menu[i].icon}}" width="50"/>
+    {{menu[i].name}}
+  </li>
+</ul>
+</body>
+</html>
